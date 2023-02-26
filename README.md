@@ -1,2 +1,1 @@
-# golling
-golling - update golang  to the latest version
+# golling - update golang to the latest version
