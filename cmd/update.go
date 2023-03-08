@@ -22,9 +22,25 @@ import (
 )
 
 const (
-	latestGoVersion = "1.20.1"
+	latestGoVersion = "1.20.2"
 	golangPath      = "/usr/local/go"
 )
+
+// golangTarballChecksums return key=taraball name , value=sha256 checksum
+func golangTarballChecksums() map[string]string {
+	return map[string]string{
+		"go1.20.2.darwin-amd64.tar.gz":  "c93b8ced9517d07e1cd4c362c6e2d5242cb139e29b417a328fbf19aded08764c",
+		"go1.20.2.darwin-arm64.tar.gz":  "7343c87f19e79c0063532e82e1c4d6f42175a32d99f7a4d15e658e88bf97f885",
+		"go1.20.2.linux-386.tar.gz":     "ee240ed33ae57504c41f04c12236aeaa17fbeb6ea9fcd096cd9dc7a89d10d4db",
+		"go1.20.2.linux-amd64.tar.gz":   "4eaea32f59cde4dc635fbc42161031d13e1c780b87097f4b4234cfce671f1768",
+		"go1.20.2.linux-arm64.tar.gz":   "78d632915bb75e9a6356a47a42625fd1a785c83a64a643fedd8f61e31b1b3bef",
+		"go1.20.2.linux-armv6l.tar.gz":  "d79d56bafd6b52b8d8cbe3f8e967caaac5383a23d7a4fa9ac0e89778cd16a076",
+		"go1.20.2.freebsd-386.tar.gz":   "14f9be2004e042b3a64d0facb0c020756a9084a5c7333e33b0752b393b6016ea",
+		"go1.20.2.freebsd-amd64.tar.gz": "b41b67b4f1b56797a7cecf6ee7f47fcf4f93960b2788a3683c07dd009d30b2a4",
+		"go1.20.2.linux-ppc64le.tar.gz": "850564ddb760cb703db63bf20182dc4407abd2ff090a95fa66d6634d172fd095",
+		"go1.20.2.linux-s390x.tar.gz":   "8da24c5c4205fe8115f594237e5db7bcb1d23df67bc1fa9a999954b1976896e8",
+	}
+}
 
 type updateOption struct {
 	force bool
@@ -185,22 +201,6 @@ func hasRootPrivirage() (bool, error) {
 
 func tarballName() string {
 	return fmt.Sprintf("go%s.%s-%s.tar.gz", latestGoVersion, runtime.GOOS, runtime.GOARCH)
-}
-
-// golangTarballChecksums return key=taraball name , value=sha256 checksum
-func golangTarballChecksums() map[string]string {
-	return map[string]string{
-		"go1.20.1.darwin-amd64.tar.gz":  "a300a45e801ab459f3008aae5bb9efbe9a6de9bcd12388f5ca9bbd14f70236de",
-		"go1.20.1.darwin-arm64.tar.gz":  "f1a8e06c7f1ba1c008313577f3f58132eb166a41ceb95ce6e9af30bc5a3efca4",
-		"go1.20.1.linux-386.tar.gz":     "3a7345036ebd92455b653e4b4f6aaf4f7e1f91f4ced33b23d7059159cec5f4d7",
-		"go1.20.1.linux-amd64.tar.gz":   "000a5b1fca4f75895f78befeb2eecf10bfff3c428597f3f1e69133b63b911b02",
-		"go1.20.1.linux-arm64.tar.gz":   "5e5e2926733595e6f3c5b5ad1089afac11c1490351855e87849d0e7702b1ec2e",
-		"go1.20.1.linux-armv6l.tar.gz":  "e4edc05558ab3657ba3dddb909209463cee38df9c1996893dd08cde274915003",
-		"go1.20.1.freebsd-386.tar.gz":   "57d80349dc4fbf692f8cd85a5971f97841aedafcf211e367e59d3ae812292660",
-		"go1.20.1.freebsd-amd64.tar.gz": "6e124d54d5850a15fdb15754f782986f06af23c5ddb6690849417b9c74f05f98",
-		"go1.20.1.linux-ppc64le.tar.gz": "85cfd4b89b48c94030783b6e9e619e35557862358b846064636361421d0b0c52",
-		"go1.20.1.linux-s390x.tar.gz":   "ba3a14381ed4538216dec3ea72b35731750597edd851cece1eb120edf7d60149",
-	}
 }
 
 // fetchGolangTarball download latest golang
