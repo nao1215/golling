@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/Masterminds/semver v1.5.0
-	github.com/nao1215/gorky v0.2.0
+	github.com/nao1215/gorky v0.2.1
 	github.com/spf13/cobra v1.6.1
 )
 
