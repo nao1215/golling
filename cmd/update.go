@@ -22,23 +22,23 @@ import (
 )
 
 const (
-	latestGoVersion = "1.20.2"
+	latestGoVersion = "1.20.3"
 	golangPath      = "/usr/local/go"
 )
 
 // golangTarballChecksums return key=taraball name , value=sha256 checksum
 func golangTarballChecksums() map[string]string {
 	return map[string]string{
-		"go1.20.2.darwin-amd64.tar.gz":  "c93b8ced9517d07e1cd4c362c6e2d5242cb139e29b417a328fbf19aded08764c",
-		"go1.20.2.darwin-arm64.tar.gz":  "7343c87f19e79c0063532e82e1c4d6f42175a32d99f7a4d15e658e88bf97f885",
-		"go1.20.2.linux-386.tar.gz":     "ee240ed33ae57504c41f04c12236aeaa17fbeb6ea9fcd096cd9dc7a89d10d4db",
-		"go1.20.2.linux-amd64.tar.gz":   "4eaea32f59cde4dc635fbc42161031d13e1c780b87097f4b4234cfce671f1768",
-		"go1.20.2.linux-arm64.tar.gz":   "78d632915bb75e9a6356a47a42625fd1a785c83a64a643fedd8f61e31b1b3bef",
-		"go1.20.2.linux-armv6l.tar.gz":  "d79d56bafd6b52b8d8cbe3f8e967caaac5383a23d7a4fa9ac0e89778cd16a076",
-		"go1.20.2.freebsd-386.tar.gz":   "14f9be2004e042b3a64d0facb0c020756a9084a5c7333e33b0752b393b6016ea",
-		"go1.20.2.freebsd-amd64.tar.gz": "b41b67b4f1b56797a7cecf6ee7f47fcf4f93960b2788a3683c07dd009d30b2a4",
-		"go1.20.2.linux-ppc64le.tar.gz": "850564ddb760cb703db63bf20182dc4407abd2ff090a95fa66d6634d172fd095",
-		"go1.20.2.linux-s390x.tar.gz":   "8da24c5c4205fe8115f594237e5db7bcb1d23df67bc1fa9a999954b1976896e8",
+		"go1.20.3.darwin-amd64.tar.gz":  "c1e1161d6d859deb576e6cfabeb40e3d042ceb1c6f444f617c3c9d76269c3565",
+		"go1.20.3.darwin-arm64.tar.gz":  "86b0ed0f2b2df50fa8036eea875d1cf2d76cefdacf247c44639a1464b7e36b95",
+		"go1.20.3.linux-386.tar.gz":     "e12384311403f1389d14cc1c1295bfb4e0dd5ab919403b80da429f671a223507",
+		"go1.20.3.linux-amd64.tar.gz":   "979694c2c25c735755bf26f4f45e19e64e4811d661dd07b8c010f7a8e18adfca",
+		"go1.20.3.linux-arm64.tar.gz":   "eb186529f13f901e7a2c4438a05c2cd90d74706aaa0a888469b2a4a617b6ee54",
+		"go1.20.3.linux-armv6l.tar.gz":  "b421e90469a83671641f81b6e20df6500f033e9523e89cbe7b7223704dd1035c",
+		"go1.20.3.freebsd-386.tar.gz":   "340e80abd047c597fdc0f50a6cc59617f06c297d62f7fc77f4a0164e2da6f7aa",
+		"go1.20.3.freebsd-amd64.tar.gz": "2169fcd8b6c94c5fbe07c0b470ccfb6001d343f6548ad49f3d9ab78e3b5753c7",
+		"go1.20.3.linux-ppc64le.tar.gz": "943c89aa1624ea544a022b31e3d6e16a037200e436370bdd5fd67f3fa60be282",
+		"go1.20.3.linux-s390x.tar.gz":   "126cf823a5634ef2544b866db107b9d351d3ea70d9e240b0bdcfb46f4dcae54b",
 	}
 }
 
