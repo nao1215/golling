@@ -1,7 +1,7 @@
 # golling - update golang to the latest version
 For those of you who want to stay up to date, golling will install or update the latest version of golang on your system. So, let's begin with 'golling update'.
 
-<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">🥳 Go 1.20.2 and 1.19.7 are released!<br><br>🔐 Security: Includes a security fix for crypto/elliptic (CVE-2023-24532).<br><br>🔈 Announcement: <a href="https://t.co/0R5yvEp6JL">https://t.co/0R5yvEp6JL</a><br><br>⬇️ Download: <a href="https://t.co/CxvhilnLor">https://t.co/CxvhilnLor</a><a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> <a href="https://t.co/xlnHevMUGv">pic.twitter.com/xlnHevMUGv</a></p>&mdash; Go (@golang) <a href="https://twitter.com/golang/status/1633151903352627207?ref_src=twsrc%5Etfw">March 7, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉 Go 1.20.3 and 1.19.8 are released!<br><br>🔐 Security: Includes security fixes in go/parser, html/template, mime/multipart, net/http, net/textproto.<br><br>🗣 Announcement: <a href="https://t.co/ArWitPhdK5">https://t.co/ArWitPhdK5</a><br><br>⬇️ Download: <a href="https://t.co/NWgsxwoPCg">https://t.co/NWgsxwoPCg</a><a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> <a href="https://t.co/wagVWAK68t">pic.twitter.com/wagVWAK68t</a></p>&mdash; Go (@golang) <a href="https://twitter.com/golang/status/1643308480005124096?ref_src=twsrc%5Etfw">April 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## How to install
 ### Use "go install"
